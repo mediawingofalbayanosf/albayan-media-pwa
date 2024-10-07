@@ -1,10 +1,11 @@
 {
     "name": "Media Wing - AL BAYAN OSF",
     "short_name": "AL BAYAN OSF",
-    "start_url": "/",
+    "start_url": "/albayan-media-pwa/",
     "display": "standalone",
     "background_color": "#ffffff",
-    "theme_color": "#2b2b2b",
+    "theme_color": "#333333",
+    "description": "The official PWA for Media Wing - AL BAYAN OSF.",
     "icons": [
         {
             "src": "icon-192x192.png",
@@ -20,7 +21,7 @@
     "screenshots": [
         {
             "src": "screenshot-desktop.png",
-            "sizes": "1080x720",
+            "sizes": "1200x720",
             "type": "image/png",
             "form_factor": "wide"
         },
