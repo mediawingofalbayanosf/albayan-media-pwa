@@ -1,3 +1,4 @@
+/* Basic styling for body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -5,6 +6,7 @@ body {
     margin: 0;
 }
 
+/* Header styling */
 header {
     background-color: #333;
     color: #fff;
@@ -12,17 +14,20 @@ header {
     text-align: center;
 }
 
+/* Logo and Title container */
 .logo-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Logo styling */
 .logo {
     height: 40px;
     margin-right: 15px;
 }
 
+/* Navigation bar styling */
 nav ul {
     display: flex;
     justify-content: center;
@@ -34,6 +39,7 @@ nav ul li {
     margin: 0 15px;
 }
 
+/* Navigation links */
 nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -44,11 +50,13 @@ nav ul li a:hover {
     color: #ffd700;
 }
 
+/* Main content area */
 main {
     padding: 20px;
     text-align: center;
 }
 
+/* Footer styling */
 footer {
     background-color: #333;
     color: #fff;
@@ -57,4 +65,71 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Social Media Section */
+.social-media {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-button i {
+    margin-right: 8px;
+}
+
+/* Button Colors */
+.facebook {
+    background-color: #3b5998;
+}
+
+.facebook:hover {
+    background-color: #2d4373;
+}
+
+.instagram {
+    background-color: #e4405f;
+}
+
+.instagram:hover {
+    background-color: #c13545;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.twitter:hover {
+    background-color: #0c85d0;
+}
+
+.youtube {
+    background-color: #ff0000;
+}
+
+.youtube:hover {
+    background-color: #cc0000;
+}
+
+.telegram {
+    background-color: #0088cc;
+}
+
+.telegram:hover {
+    background-color: #006699;
 }
