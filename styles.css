@@ -19,6 +19,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Logo styling */
@@ -77,6 +78,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 15px;
+    flex-wrap: wrap; /* Allow buttons to wrap based on screen size */
 }
 
 .social-button {
@@ -132,4 +134,54 @@ footer {
 
 .telegram:hover {
     background-color: #006699;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Large screens (desktops) */
+@media (min-width: 1024px) {
+    .social-buttons {
+        flex-direction: row; /* Keep buttons in a row on large screens */
+    }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .social-buttons {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 767px) {
+    .logo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .social-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* More space between buttons */
+    }
+
+    .social-button {
+        width: 80%; /* Buttons take more width on small screens */
+        font-size: 16px; /* Adjust font size for readability */
+    }
+
+    footer {
+        position: relative; /* Allow footer to flow naturally instead of fixed */
+    }
 }
