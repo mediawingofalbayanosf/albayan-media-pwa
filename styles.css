@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Light background color */
+}
+
+header, footer {
+  background-color: #2b2b2b; /* Dark background color */
+  color: #ffffff; /* White text color */
+  text-align: center;
+  padding: 1em 0;
+}
+
+nav ul {
+  list-style-type: none;
+  background-color: #444; /* Darker background for navigation */
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+  width: 25%;
+}
+
+nav li a {
+  display: block;
+  color: #f1f1f1; /* Light text for contrast */
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+  background-color: #444; /* Ensure this stays dark */
+}
+
+nav li a:hover {
+  background-color: #333; /* Darker hover background */
+  color: #ffffff; /* Maintain contrast on hover */
+}
+
+main {
+  padding: 1em;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+section h2 {
+  border-bottom: 2px solid #2b2b2b;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 0.5em 0;
+}
+
+ul li a {
+  color: #2b2b2b; /* Consistent dark color for regular links */
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 0;
+}
