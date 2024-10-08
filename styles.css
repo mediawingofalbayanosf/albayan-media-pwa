@@ -1,187 +1,86 @@
-/* Basic styling for body */
+/* General body and layout */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
     margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
 }
 
-/* Header styling */
 header {
     background-color: #333;
     color: #fff;
-    padding: 15px;
     text-align: center;
+    padding: 20px 0;
 }
 
-/* Logo and Title container */
-.logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
 }
 
-/* Logo styling */
-.logo {
-    height: 40px;
-    margin-right: 15px;
-}
-
-/* Navigation bar styling */
 nav ul {
+    list-style: none;
+    padding: 0;
     display: flex;
     justify-content: center;
-    list-style-type: none;
-    padding: 0;
+    background-color: #444;
 }
 
 nav ul li {
     margin: 0 15px;
 }
 
-/* Navigation links */
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.2rem;
 }
 
-nav ul li a:hover {
-    color: #ffd700;
-}
-
-/* Main content area */
 main {
+    text-align: center;
     padding: 20px;
-    text-align: center;
 }
 
-/* Footer styling */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+h2 {
+    color: #333;
 }
 
-/* Social Media Section */
-.social-media {
-    text-align: center;
-    padding: 20px 0;
+.social-media h3 {
+    margin-bottom: 10px;
 }
 
 .social-buttons {
     display: flex;
     justify-content: center;
     gap: 15px;
-    flex-wrap: wrap; /* Allow buttons to wrap based on screen size */
 }
 
 .social-button {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     padding: 10px 20px;
+    background-color: #333;
     color: #fff;
     border-radius: 5px;
-    font-size: 18px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    font-size: 1.1rem;
 }
 
 .social-button i {
-    margin-right: 8px;
+    font-size: 1.3rem;
 }
 
-/* Button Colors */
-.facebook {
-    background-color: #3b5998;
-}
+.social-button.facebook { background-color: #3b5998; }
+.social-button.instagram { background-color: #E1306C; }
+.social-button.twitter { background-color: #1DA1F2; }
+.social-button.youtube { background-color: #FF0000; }
+.social-button.telegram { background-color: #0088cc; }
 
-.facebook:hover {
-    background-color: #2d4373;
-}
-
-.instagram {
-    background-color: #e4405f;
-}
-
-.instagram:hover {
-    background-color: #c13545;
-}
-
-.twitter {
-    background-color: #1da1f2;
-}
-
-.twitter:hover {
-    background-color: #0c85d0;
-}
-
-.youtube {
-    background-color: #ff0000;
-}
-
-.youtube:hover {
-    background-color: #cc0000;
-}
-
-.telegram {
-    background-color: #0088cc;
-}
-
-.telegram:hover {
-    background-color: #006699;
-}
-
-/* Media Queries for Responsiveness */
-
-/* Large screens (desktops) */
-@media (min-width: 1024px) {
-    .social-buttons {
-        flex-direction: row; /* Keep buttons in a row on large screens */
-    }
-}
-
-/* Medium screens (tablets) */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .social-buttons {
-        flex-direction: row;
-    }
-
-    nav ul {
-        flex-direction: row;
-    }
-}
-
-/* Small screens (phones) */
-@media (max-width: 767px) {
-    .logo-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul {
-        flex-direction: column; /* Stack navigation links vertically */
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    .social-buttons {
-        flex-direction: column; /* Stack buttons vertically */
-        gap: 10px; /* More space between buttons */
-    }
-
-    .social-button {
-        width: 80%; /* Buttons take more width on small screens */
-        font-size: 16px; /* Adjust font size for readability */
-    }
-
-    footer {
-        position: relative; /* Allow footer to flow naturally instead of fixed */
-    }
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }
