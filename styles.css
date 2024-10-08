@@ -51,11 +51,15 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
-    transition: color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    color: #e0e0e0;
+    color: #fff;
+    background-color: #666;
+    filter: brightness(1.2);
 }
 
 /* Main content */
@@ -91,31 +95,39 @@ h2 {
     border-radius: 5px;
     text-decoration: none;
     font-size: 1.1rem;
-    transition: background-color 0.3s ease;
-}
-
-.social-button:hover {
-    background-color: #555;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .social-button i {
     font-size: 1.3rem;
 }
 
+.social-button:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.3);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Social button specific colors */
 .social-button.facebook { background-color: #3b5998; }
 .social-button.instagram { background-color: #E1306C; }
 .social-button.twitter { background-color: #1DA1F2; }
 .social-button.youtube { background-color: #FF0000; }
 .social-button.telegram { background-color: #0088cc; }
 
-.social-button:hover {
-    background-color: #555;
-}
+/* Hover effects with brightened colors */
+.social-button.facebook:hover { background-color: #4b70d2; }
+.social-button.instagram:hover { background-color: #ff3a88; }
+.social-button.twitter:hover { background-color: #2ea6f8; }
+.social-button.youtube:hover { background-color: #ff3333; }
+.social-button.telegram:hover { background-color: #00aaff; }
 
 /* Responsive social buttons */
 @media (max-width: 600px) {
     .social-buttons {
         flex-direction: column;
+        width: 100%;
     }
 }
 
