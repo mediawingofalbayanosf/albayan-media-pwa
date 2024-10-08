@@ -4,8 +4,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+/* Header */
 header {
     background-color: #333;
     color: #fff;
@@ -13,9 +17,22 @@ header {
     padding: 20px 0;
 }
 
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 header h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin: 0;
+}
+
+.small-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 nav ul {
@@ -33,43 +50,52 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: #e0e0e0;
+}
+
+/* Main content */
 main {
     text-align: center;
     padding: 20px;
+    flex: 1;
 }
 
 h2 {
     color: #333;
 }
 
+/* Social Media Section */
 .social-media h3 {
     margin-bottom: 10px;
 }
 
 .social-buttons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;  /* Allow buttons to wrap onto the next line */
+    gap: 10px;
 }
 
 .social-button {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 10px 20px;
+    padding: 10px 15px;
     background-color: #333;
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
     font-size: 1.1rem;
-    flex-basis: calc(33% - 30px); /* Each button takes up 33% of the row's width minus gaps */
-    margin: 5px; /* Add margin for better spacing */
-    text-align: center;
-    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+    background-color: #555;
 }
 
 .social-button i {
@@ -82,35 +108,24 @@ h2 {
 .social-button.youtube { background-color: #FF0000; }
 .social-button.telegram { background-color: #0088cc; }
 
+.social-button:hover {
+    background-color: #555;
+}
+
+/* Responsive social buttons */
+@media (max-width: 600px) {
+    .social-buttons {
+        flex-direction: column;
+    }
+}
+
+/* Footer */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    margin-top: 20px;
-}
-
-/* Responsive Design for smaller screens */
-@media screen and (max-width: 600px) {
-    .social-button {
-        flex-basis: calc(50% - 10px); /* For smaller screens, take 50% of the row */
-    }
-
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    nav ul li a {
-        font-size: 1rem;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .social-button {
-        flex-basis: calc(100% - 10px); /* For very small screens, buttons take up the full width */
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
