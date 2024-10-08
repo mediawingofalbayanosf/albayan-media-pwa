@@ -31,5 +31,12 @@
             "type": "image/png",
             "form_factor": "narrow"
         }
-    ]
+    ],
+    "protocol_handlers": [
+        {
+            "protocol": "web+albayan",
+            "url": "/albayan-media-pwa/handle-protocol?data=%s"
+        }
+    ],
+    "display_override": ["window-controls-overlay"]
 }
