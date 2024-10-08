@@ -53,6 +53,7 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 15px;
+    flex-wrap: wrap;  /* Allow buttons to wrap onto the next line */
 }
 
 .social-button {
@@ -65,6 +66,10 @@ h2 {
     border-radius: 5px;
     text-decoration: none;
     font-size: 1.1rem;
+    flex-basis: calc(33% - 30px); /* Each button takes up 33% of the row's width minus gaps */
+    margin: 5px; /* Add margin for better spacing */
+    text-align: center;
+    justify-content: center;
 }
 
 .social-button i {
@@ -83,4 +88,29 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 600px) {
+    .social-button {
+        flex-basis: calc(50% - 10px); /* For smaller screens, take 50% of the row */
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .social-button {
+        flex-basis: calc(100% - 10px); /* For very small screens, buttons take up the full width */
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
 }
